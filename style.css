@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  background-color: #F3F6FA;
   font-size: 1.6rem;
   /* 16px */
 }
@@ -12,4 +13,167 @@ body {
   margin: 0;
 }
 
-header {}
+@font-face {
+  font-family: 'Inter';
+  src: url('.../assets/fonts/Inter-VariableFont.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Inter Regular';
+  src: url('.../assets/fonts/static/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Inter SemiBold';
+  src: url('.../assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+}
+
+:root {
+  --color-blue: #345FF6;
+  --gunmetal-color: #253347;
+  --dark-electric-blue-color: #5E6E85;
+  --borders-color: #D8E2E7;
+  --pure-white-color: #ffffff;
+
+  --font-inter: 'Inter', sans-serif;
+  --font-inter-regular: 'Inter Regular', sans-serif;
+  --font-inter-semibold: 'Inter SemiBold', sans-serif;
+
+}
+
+
+header {
+  height: 64rem;
+  display: grid;
+  place-content: center;
+  gap: 3.4rem;
+  background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+  border-radius: 0 0 3.5rem 3.5rem;
+  align-content: start;
+}
+
+header img {
+  height: 4rem;
+  width: 4rem;
+  margin-top: 3.2rem;
+  place-self: center;
+}
+
+header h1 {
+  text-align: center;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4.8rem;
+  line-height: 110%;
+  letter-spacing: 0.00rem;
+}
+
+header p {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  color: var(--dark-electric-blue-color);
+  text-align: center;
+  line-height: 150%;
+  font-size: 1.6rem;
+
+  margin: 0 2.4rem;
+
+}
+
+#calc-input {
+  background-color: #FFFFFF;
+  border-radius: 1.6rem;
+  padding: 2.4rem;
+
+  height: 46.9rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  margin-top: -15.5rem;
+}
+
+#calc-input h2 {
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.05rem;
+}
+
+#field-set-system {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+
+}
+
+.radio-selection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+#metric {
+  height: 3.1rem;
+  width: 3.1rem;
+}
+
+#imperial {
+  height: 3.1rem;
+  width: 3.1rem;
+}
+
+#field-set-system h3 {
+  margin-left: 1.7rem;
+  margin-right: 2.4rem;
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--gunmetal-color);
+}
+
+#fieldset {
+  margin-top: 2.4rem;
+  padding: 0;
+  height: 21.2rem;
+  width: 100%;
+
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 9.8rem;
+}
+
+#fieldset label {
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--dark-electric-blue-color);
+
+}
+
+#fieldset input {
+  display: block;
+  border-radius: 1.2rem;
+  height: 6.9rem;
+  margin-top: 0.8rem;
+  border: .1rem solid var(--borders-color);
+
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  padding-left: 2.4rem;
+  margin-bottom: 1.6rem;
+}

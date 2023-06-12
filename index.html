@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -28,18 +34,31 @@
 
   </header>
 
-  <article>
+  <article id="calc-input">
 
     <h2> Enter your details below </h2>
 
-    <h3>Metric</h3>
+    <div id="field-set-system">
+      <div class="radio-selection">
+        <input type="radio" id="metric" name="Metric" value="Metric" checked>
+        <h3>Metric</h3>
+      </div>
+      <div class="radio-selection">
+        <input type="radio" id="imperial" name="Imperial" value="Imperial">
+        <h3>Imperial</h3>
+      </div>
+    </div>
 
-    <h3>Imperial</h3>
-
-    <label for="height-field-label">Height</label>
-    <input type="height-input-in-metric">
-    <label for="weight-field-label">Weight</label>
-    <input type="weight-input-in-imperial">
+    <div id="fieldset">
+      <div class="input-field">
+        <label for="height-field-label">Height</label>
+        <input type="number" id="height-field-label" value="123">
+      </div>
+      <div class="input-field">
+        <label for="weight-field-label">Weight</label>
+        <input type="number" id="weight-field-label" value="88">
+      </div>
+    </div>
 
     <article>
 
