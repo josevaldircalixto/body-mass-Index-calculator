@@ -11,6 +11,8 @@ body {
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -108,7 +110,8 @@ header p {
   display: flex;
   flex-direction: row;
   gap: 2.4rem;
-
+  max-width: 28rem;
+  flex-wrap: wrap;
 }
 
 .radio-selection {
@@ -136,6 +139,7 @@ header p {
   font-weight: 600;
   font-size: 1.6rem;
   color: var(--gunmetal-color);
+
 }
 
 #fieldset {
@@ -176,4 +180,5 @@ header p {
   line-height: 2.9rem;
   padding-left: 2.4rem;
   margin-bottom: 1.6rem;
+  max-width: 28rem;
 }
