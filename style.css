@@ -109,7 +109,7 @@ header p {
 
 }
 
-fieldset {
+#calc-input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -120,7 +120,7 @@ fieldset {
   margin-top: -168px;
 
   width: 328px;
-  height: 649px;
+  /*  height: 649px; */
   /* left: 24px;
   top: 471px; */
   background: #FFFFFF;
@@ -137,8 +137,13 @@ fieldset {
   letter-spacing: -0.05rem;
 }
 
+#calc-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 #field-set-system {
-  margin-top: 2.4rem;
   display: flex;
   flex-direction: row;
   gap: 2.4rem;
@@ -183,7 +188,7 @@ fieldset {
   height: 9.8rem;
 }
 
-#fieldset label {
+#fieldset-metrics label {
   font-family: var(--font-inter);
   font-style: normal;
   font-weight: 400;
@@ -192,7 +197,7 @@ fieldset {
 
 }
 
-#fieldset input {
+#fieldset-metrics input {
   display: block;
   border-radius: 1.2rem;
   height: 6.9rem;
@@ -488,11 +493,47 @@ main {
   align-items: center;
 }
 
-#list-of-groups li {
+#list-of-groups-header-and-icon-192px {
   display: flex;
   flex-direction: column;
   gap: 16px;
   height: 216px;
+  list-style-type: none;
+  background-color: var(--pure-white-color);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+}
+
+#list-of-groups-header-and-icon-240px {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 240px;
+  list-style-type: none;
+  background-color: var(--pure-white-color);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+}
+
+#list-of-groups-header-and-icon-216px {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 216px;
+  list-style-type: none;
+  background-color: var(--pure-white-color);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+}
+
+#list-of-groups-header-and-icon-168px {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 168px;
   list-style-type: none;
   background-color: var(--pure-white-color);
   padding: 24px;

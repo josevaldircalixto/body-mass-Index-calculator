@@ -35,47 +35,82 @@
   </header>
 
   <fieldset id="calc-input">
+    <!-- metrics fields start -->
 
-    <h2> Enter your details below </h2>
+    <div id="calc-input-container">
+      <h2> Enter your details below </h2>
 
-    <div id="field-set-system">
-      <div class="radio-selection">
-        <input type="radio" id="metric" name="Metric" value="Metric" checked>
-        <h3>Metric</h3>
-      </div>
-      <div class="radio-selection">
-        <input type="radio" id="imperial" name="Imperial" value="Imperial">
-        <h3>Imperial</h3>
-      </div>
-    </div>
-
-    <div id="fieldset">
-      <div class="input-field">
-        <label for="height-field-label">Height</label>
-        <div>
-          <input type="number" id="height-field-label" value="123">
-          <p id="unit-cm">cm</p>
+      <div id="field-set-system">
+        <div class="radio-selection">
+          <input type="radio" id="metric" name="Metric" value="Metric" checked>
+          <h3>Metric</h3>
+        </div>
+        <div class="radio-selection">
+          <input type="radio" id="imperial" name="Imperial" value="Imperial">
+          <h3>Imperial</h3>
         </div>
       </div>
-      <div class="input-field">
-        <label for="weight-field-label">Weight</label>
-        <div>
-          <input type="number" id="weight-field-label" value="88">
-          <p id="unit-kg">Kg</p>
+
+      <div id="fieldset-metrics">
+        <div class="input-field">
+          <label for="height-field-label">Height</label>
+          <div>
+            <input type="number" id="height-field-label" value="123">
+            <p id="unit-cm">cm</p>
+          </div>
+        </div>
+        <div class="input-field">
+          <label for="weight-field-label">Weight</label>
+          <div>
+            <input type="number" id="weight-field-label" value="88">
+            <p id="unit-kg">Kg</p>
+          </div>
         </div>
       </div>
-    </div>
+      <!-- metrics fields end -->
 
-    <article id="display-result">
-      <div id="display-result-number">
-        <h3>Your BMI is...</h3>
-        <!-- add score -->
-        <span>23.4</span>
-      </div>
-      <div id="display-result-description">
-        <p>Your BMI suggests you're <strong> healthy weight</strong>.</p>
-        <p>Your ideal weight is between <strong>63.3kgs - 85.2kgs</strong>.</p>
-      </div>
+      <!-- imperial fields start -->
+      <div id="fieldset-imperal">
+        <div class="input-field">
+          <label for="height-field-label">Height</label>
+          <div>
+            <div>
+              <input type="number" id="height-field-label-ft" value="5">
+              <p id="unit-ft">ft</p>
+            </div>
+            <div>
+              <input type="number" id="height-field-label-in" value="11">
+              <p id="unit-in">in</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-field">
+          <label for="weight-field-label">Weight</label>
+          <div>
+            <div>
+              <input type="number" id="weight-field-label-st" value="11">
+              <p id="unit-st">st</p>
+            </div>
+            <div>
+              <input type="number" id="weight-field-label-lbs" value="4">
+              <p id="unit-lbs">lbs</p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- imperial fields end -->
+
+      <article id="display-result">
+        <div id="display-result-number">
+          <h3>Your BMI is...</h3>
+          <!-- add score -->
+          <span>23.4</span>
+        </div>
+        <div id="display-result-description">
+          <p>Your BMI suggests you're <strong> healthy weight</strong>.</p>
+          <p>Your ideal weight is between <strong>63.3kgs - 85.2kgs</strong>.</p>
+        </div>
+    </div>
     </article>
 
   </fieldset>
@@ -139,7 +174,7 @@
 
 
       <ul id="list-of-groups">
-        <li>
+        <li id="list-of-groups-header-and-icon-216px">
           <div id="list-of-groups-header-and-icon">
             <img src="/assets/images/icon-gender.svg" alt="">
             <h3>Gender</h3>
@@ -149,7 +184,7 @@
           </p>
         </li>
 
-        <li>
+        <li id="list-of-groups-header-and-icon-168px">
           <div id="list-of-groups-header-and-icon">
             <img src="/assets/images/icon-age.svg" alt="">
             <h3>Age</h3>
@@ -159,7 +194,7 @@
           </p>
         </li>
 
-        <li>
+        <li id="list-of-groups-header-and-icon-192px">
           <div id="list-of-groups-header-and-icon">
             <img src="/assets/images/icon-muscle.svg" alt="">
             <h3>Muscle</h3>
@@ -169,7 +204,7 @@
             differentiate muscle from fat.</p>
         </li>
 
-        <li>
+        <li id="list-of-groups-header-and-icon-240px">
           <div id="list-of-groups-header-and-icon">
             <img src="/assets/images/icon-pregnancy.svg" alt="">
             <h3>Pregnancy</h3>
@@ -179,7 +214,7 @@
             and child.</p>
         </li>
 
-        <li>
+        <li id="list-of-groups-header-and-icon-216px">
           <div id="list-of-groups-header-and-icon">
             <img src="/assets/images/icon-race.svg" alt="">
             <h3>Race</h3>
