@@ -47,22 +47,21 @@ body {
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0;
+  max-width: 100vw;
   height: 640px;
-  width: 375px;
-  padding-left: 24px;
-  padding-right: 24px;
+
 }
 
 
 #responsive-header {
+  padding-left: 24px;
+  padding-right: 24px;
+  /* margin-left: 24px;
+  margin-right: 24px; */
   display: flex;
   flex-direction: column;
 
-  width: 375px;
-  height: 640px;
+  height: 100%;
 
   /* Gradient 1 */
 
@@ -71,7 +70,7 @@ header {
 }
 
 header img {
-  display: flex;
+
   height: 4rem;
   width: 4rem;
   margin-top: 3.2rem;
@@ -124,16 +123,22 @@ header p {
 /* start of set between metric and imperial */
 
 #calc-input {
+  height: 640px;
+
+}
+
+#container-inside-fieldset {
+  margin: 24px;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 24px;
   gap: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -168px;
 
-  width: 328px;
+  margin-top: -168px;
+  /* align-items: center; */
+
   /*  height: 649px; */
   /* left: 24px;
   top: 471px; */
@@ -142,6 +147,7 @@ header p {
   border-radius: 16px;
   border-width: 0;
 }
+
 
 #calc-input h2 {
   font-family: var(--font-inter);
@@ -155,13 +161,15 @@ header p {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  max-width: 100%;
 }
 
 #field-set-system {
   display: flex;
   flex-direction: row;
   gap: 2.4rem;
-  max-width: 28rem;
+  justify-content: space-evenly;
+
   flex-wrap: wrap;
 }
 
@@ -213,8 +221,8 @@ header p {
   align-items: flex-start;
   padding: 20px 24px;
   gap: 24px;
+  max-width: 100%;
 
-  width: 280px;
   height: 69px;
 
   /* Pure White */
@@ -265,7 +273,7 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+
   gap: 16px;
   height: 212px;
 }
@@ -276,12 +284,14 @@ header p {
   align-items: flex-start;
   padding: 0px;
   gap: 8px;
-  width: 280px;
+  max-width: 100%;
+
   height: 98px;
 }
 
 #div-field-metrics {
   display: flex;
+  max-width: 100%;
 }
 
 /* start imperial fieldset */
@@ -293,8 +303,9 @@ header p {
   align-items: flex-start;
   padding: 20px 24px;
   gap: 24px;
+  max-width: 100%;
 
-  width: 132px;
+
   height: 69px;
 
   /* Pure White */
@@ -320,6 +331,7 @@ header p {
 
 #inner-box-imperial {
   display: flex;
+  max-width: 100%;
 }
 
 
@@ -330,7 +342,6 @@ header p {
   padding: 0px;
   gap: 16px;
 
-  width: 280px;
   height: 212px;
 }
 
@@ -338,7 +349,7 @@ header p {
   display: flex;
   flex-direction: row;
   padding: 0px;
-  width: 280px;
+  max-width: 100%;
   height: 69px;
 }
 
@@ -348,8 +359,9 @@ header p {
   align-items: flex-start;
   padding: 0px;
   gap: 8px;
+  max-width: 100%;
 
-  width: 280px;
+
   height: 98px;
 
 }
@@ -366,7 +378,7 @@ header p {
   align-items: flex-start;
   padding: 32px;
   gap: 24px;
-  width: 280px;
+
   height: 257px;
   background: linear-gradient(90deg, #345FF7 0%, #587DFF 100%);
   border-radius: 16px;
@@ -416,10 +428,11 @@ header p {
 
 #information-about-result-meaning img {
   margin-top: 72px;
-  width: 375px;
-  height: 354.39px;
+
+  /* height: 354.39px; */
   left: 0px;
   top: 1192px;
+  max-width: 100%;
 }
 
 #information-about-result-meaning h2 {
@@ -458,7 +471,8 @@ main {
   padding: 0px;
   gap: 32px;
 
-  width: 328px;
+  /* width: 328px; */
+  margin: 0 24px;
   height: 342px;
   left: calc(50% - 328px/2 + 0.5px);
   top: 1594.39px;
@@ -669,10 +683,36 @@ main {
 
 @media (min-width:768px) {
 
-  #responsive-header {
-    width: 1276px;
-    height: 737px;
+  header {
+    height: 640px;
   }
 
+  #header-text {
+    /* margin-left: 39px;
+    margin-right: 39px; */
+  }
+
+  #header-text h1 {
+    margin-left: 39px;
+    margin-right: 39px;
+  }
+
+  #calc-input-container {
+    margin-left: 40px;
+    margin-right: 40px;
+
+  }
+
+  #calc-input {
+    margin-top: -286px;
+    height: 467px;
+    align-items: start;
+    margin-left: 29px;
+
+  }
+
+  #field-set-system {
+    width: 622px;
+  }
 
 }
