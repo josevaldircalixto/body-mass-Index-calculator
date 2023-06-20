@@ -852,5 +852,132 @@ main {
 }
 
 @media (min-width:1440px) {
-  #responsive-header {}
+  #responsive-desktop-header {
+    display: flex;
+    flex-direction: row;
+    margin-left: 24px;
+    width: 1276px;
+
+  }
+
+  #responsive-header,
+  #header-responsive-desktop-container {
+    width: 978px;
+  }
+
+  #calc-input {
+    position: absolute;
+    top: 400px;
+    left: 712px;
+  }
+
+  #container-inside-fieldset {
+    display: flex;
+
+    width: 564px;
+    height: 484px;
+  }
+
+  #input-field-metrics {
+    width: 238px;
+  }
+
+  #fieldset-metrics {
+    width: 500px;
+    gap: 24px;
+  }
+
+  #input-number-field-metric {
+    width: 238px
+  }
+
+  #display-result {
+    width: 500px;
+  }
+
+  #display-result-description {
+    margin-bottom: 33px;
+  }
+
+
+  #information-about-result-meaning {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 131px;
+    margin-top: 65px;
+    margin-bottom: 96px;
+    height: 694px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #information-about-result-meaning img {
+    max-width: 564px;
+
+  }
+
+  #container-info-about-result {
+    width: 465px;
+  }
+
+  #container-info-about-result h2 {
+    font-size: 4.8rem;
+  }
+
+  #container-info-about-result p {
+    font-size: 16px;
+  }
+
+  #good-activities-container {
+    height: 402px;
+    border-radius: 35px;
+    margin: 0 24px;
+    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+  }
+
+  #good-activities {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #good-activities li {
+    display: flex;
+    flex-direction: column;
+    width: 365px;
+    align-items: flex-start;
+    gap: 45px;
+    justify-content: flex-start;
+  }
+
+  #good-activities-text {
+    gap: 24px;
+  }
+
+  #responsive-header img {
+    height: 64px;
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 116px;
+    margin-bottom: 117px;
+    margin-top: 75px;
+  }
+
+  #header-text h1 {
+    text-align: left;
+    font-size: 6.4rem;
+  }
+
+  #header-text p {
+    text-align: left;
+    width: 46.5rem;
+  }
+
+  #header-text {
+    min-width: 564px;
+    margin-left: 116px;
+  }
 }

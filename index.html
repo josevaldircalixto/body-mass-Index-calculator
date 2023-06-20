@@ -19,103 +19,103 @@
 </head>
 
 <body>
+  <div id="responsive-desktop-header">
+    <header id="header-responsive-desktop-container">
+      <div id="responsive-header">
+        <img src="/assets/images/logo.svg" alt="logo of the business">
+        <div id="header-text">
+          <h1>Body Mass <br> Index Calculator</h1>
 
-  <header>
-    <div id="responsive-header">
-      <img src="/assets/images/logo.svg" alt="logo of the business">
-      <div id="header-text">
-        <h1>Body Mass <br> Index Calculator</h1>
-
-        <p> Better understand your weight in relation to your height using our
-          body mass index (BM) calculator. While BMI is not the sole determinant
-          of a healthy weight, it offers a valuable starting point to evaluate
-          your overall health and well-being.
-        </p>
-      </div>
-    </div>
-  </header>
-
-  <fieldset id="calc-input">
-    <!-- metrics fields start -->
-    <div id="container-inside-fieldset">
-      <div id="calc-input-container">
-        <h2> Enter your details below </h2>
-
-        <div id="field-set-system">
-          <div class="radio-selection">
-            <input type="radio" id="metric" name="Metric" value="Metric" checked>
-            <h3>Metric</h3>
-          </div>
-          <div class="radio-selection">
-            <input type="radio" id="imperial" name="Imperial" value="Imperial">
-            <h3>Imperial</h3>
-          </div>
+          <p> Better understand your weight in relation to your height using our
+            body mass index (BM) calculator. While BMI is not the sole determinant
+            of a healthy weight, it offers a valuable starting point to evaluate
+            your overall health and well-being.
+          </p>
         </div>
-
-        <div id="fieldset-metrics">
-          <div id="input-field-metrics">
-            <label id="input-field-text-label" for="height-field-label">Height</label>
-            <div id="div-field-metrics">
-              <input id="input-number-field-metric" type="number" id="height-field-label" value="123">
-              <p id="unit">cm</p>
-            </div>
-          </div>
-          <div id="input-field-metrics">
-            <label id="input-field-text-label" for="weight-field-label">Weight</label>
-            <div id="div-field-metrics">
-              <input id="input-number-field-metric" type="number" id="weight-field-label" value="88">
-              <p id="unit">Kg</p>
-            </div>
-          </div>
-        </div>
-        <!-- metrics fields end -->
-
-        <!-- imperial fields start -->
-        <div id="fieldset-imperial">
-          <div id="fieldset-imperial-block">
-            <label id="input-field-text-label" for="height-field-label">Height</label>
-            <div id="side-by-side-field">
-              <div id="inner-box-imperial">
-                <input id="input-number-field-imperial" type="number" id="height-field-label-ft" value="5">
-                <p id="unit">ft</p>
-              </div>
-              <div id="inner-box-imperial">
-                <input id="input-number-field-imperial" type="number" id="height-field-label-in" value="11">
-                <p id="unit">in</p>
-              </div>
-            </div>
-          </div>
-
-          <div id="fieldset-imperial-block">
-            <label id="input-field-text-label" for="weight-field-label">Weight</label>
-            <div id="side-by-side-field">
-              <div id="inner-box-imperial">
-                <input id="input-number-field-imperial" type="number" id="weight-field-label-st" value="11">
-                <p id="unit">st</p>
-              </div>
-              <div id="inner-box-imperial">
-                <input id="input-number-field-imperial" type="number" id="weight-field-label-lbs" value="4">
-                <p id="unit">lbs</p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- imperial fields end -->
-
-        <article id="display-result">
-          <div id="display-result-number">
-            <h3>Your BMI is...</h3>
-            <!-- add score -->
-            <span>23.4</span>
-          </div>
-          <div id="display-result-description">
-            <p>Your BMI suggests you're <strong> healthy weight</strong>.
-              Your ideal weight is between <strong>63.3kgs - 85.2kgs</strong>.</p>
-          </div>
       </div>
-      </article>
-    </div>
-  </fieldset>
+    </header>
 
+    <fieldset id="calc-input">
+      <!-- metrics fields start -->
+      <div id="container-inside-fieldset">
+        <div id="calc-input-container">
+          <h2> Enter your details below </h2>
+
+          <div id="field-set-system">
+            <div class="radio-selection">
+              <input type="radio" id="metric" name="Metric" value="Metric" checked>
+              <h3>Metric</h3>
+            </div>
+            <div class="radio-selection">
+              <input type="radio" id="imperial" name="Imperial" value="Imperial">
+              <h3>Imperial</h3>
+            </div>
+          </div>
+
+          <div id="fieldset-metrics">
+            <div id="input-field-metrics">
+              <label id="input-field-text-label" for="height-field-label">Height</label>
+              <div id="div-field-metrics">
+                <input id="input-number-field-metric" type="number" id="height-field-label" value="123">
+                <p id="unit">cm</p>
+              </div>
+            </div>
+            <div id="input-field-metrics">
+              <label id="input-field-text-label" for="weight-field-label">Weight</label>
+              <div id="div-field-metrics">
+                <input id="input-number-field-metric" type="number" id="weight-field-label" value="88">
+                <p id="unit">Kg</p>
+              </div>
+            </div>
+          </div>
+          <!-- metrics fields end -->
+
+          <!-- imperial fields start -->
+          <!--  <div id="fieldset-imperial">
+            <div id="fieldset-imperial-block">
+              <label id="input-field-text-label" for="height-field-label">Height</label>
+              <div id="side-by-side-field">
+                <div id="inner-box-imperial">
+                  <input id="input-number-field-imperial" type="number" id="height-field-label-ft" value="5">
+                  <p id="unit">ft</p>
+                </div>
+                <div id="inner-box-imperial">
+                  <input id="input-number-field-imperial" type="number" id="height-field-label-in" value="11">
+                  <p id="unit">in</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="fieldset-imperial-block">
+              <label id="input-field-text-label" for="weight-field-label">Weight</label>
+              <div id="side-by-side-field">
+                <div id="inner-box-imperial">
+                  <input id="input-number-field-imperial" type="number" id="weight-field-label-st" value="11">
+                  <p id="unit">st</p>
+                </div>
+                <div id="inner-box-imperial">
+                  <input id="input-number-field-imperial" type="number" id="weight-field-label-lbs" value="4">
+                  <p id="unit">lbs</p>
+                </div>
+              </div>
+            </div>
+          </div> --> <!-- imperial fields end -->
+
+          <article id="display-result">
+            <div id="display-result-number">
+              <h3>Your BMI is...</h3>
+              <!-- add score -->
+              <span>23.4</span>
+            </div>
+            <div id="display-result-description">
+              <p>Your BMI suggests you're <strong> healthy weight</strong>.
+                Your ideal weight is between <strong>63.3kgs - 85.2kgs</strong>.</p>
+            </div>
+        </div>
+        </article>
+      </div>
+    </fieldset>
+  </div>
   <main id="information-about-result-meaning">
     <img src="/assets/images/image-man-eating.webp" alt="image-man-eating-sushi">
 
