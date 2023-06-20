@@ -689,7 +689,7 @@ main {
 @media (min-width:768px) {
 
   header {
-    width: 768px;
+
     height: 640px;
   }
 
@@ -806,23 +806,51 @@ main {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    align-items: center;
   }
 
   #last-section-information {
     height: 1154px;
   }
 
+  #last-section-information {
+    height: auto;
+  }
+
   #last-section-information-container {
     width: 686px;
+    height: auto;
+    margin-bottom: 96px;
   }
 
   #list-of-groups {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 24px;
   }
 
-  #list-of-groups :last-child {
-    margin-left: auto;
-    margin-right: auto;
+  .last-li {
+    justify-content: center
   }
+
+  #list-of-groups-header-and-icon-216px,
+  #list-of-groups-header-and-icon-168px,
+  #list-of-groups-header-and-icon-192px,
+  #list-of-groups-header-and-icon-240px {
+    height: 232px;
+    width: 335px;
+  }
+
+  #list-of-groups-header-and-icon h3 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1440px) {
+  #responsive-header {}
 }
