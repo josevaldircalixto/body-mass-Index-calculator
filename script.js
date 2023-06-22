@@ -1,39 +1,3 @@
-/* const result = document.getElementById("result")
-
-const height = parseFloat(document.getElementById("input-number-field-metric-height").value);
-const weight = parseFloat(document.getElementById("input-number-field-metric-weight").value);
-
-
-function CalcImc() {
-  if (height == ! '' && weight == ! '') {
-    const imc = (weight / (height * height)).toFixed(2)
-    let classification = ''
-    let IdealWeight = ''
-
-    if (imc < 18.5) {
-      classification = 'under weight'
-    } else if (imc < 25) {
-      classification = 'normal weight'
-    } else if (imc < 30) {
-      classification = 'over weight'
-    } else if (imc < 35) {
-      classification = 'obesity level I'
-    } else if (imc < 41) {
-      classification = 'obesity level II'
-    } else {
-      classification = 'obesity level III'
-    }
-
-    result.innerHTML = imc
-  } else {
-    result.innerHTML = 'fill in the inputs'
-  }
-
-
-}
- */
-
-
 function CalcImc() {
   const height = parseFloat(document.getElementById("input-number-field-metric-height").value);
   const weight = parseFloat(document.getElementById("input-number-field-metric-weight").value);
